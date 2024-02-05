@@ -1,0 +1,281 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    padding: 70px 150px 0 150px;
+}
+.top{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.img_logo-Konference{
+    max-width: 180px;
+    grid-row: 1/1;
+}
+.top_text{
+    font-family: 'Inter', sans-serif;
+    grid-row: 2/2;
+    font-size: 32px;
+}
+.mid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin-top: 80px;
+}
+.text_mid{
+    font-family: 'Inter', sans-serif;
+    grid-column: 1/1;
+    font-size: 18px;
+}
+.img_logo-artgreen{
+    max-width: 110px;
+    max-height: 120px;
+}
+.text_mid h1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+.text_mid p ul{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.mid_text-last{
+    margin-bottom: 0;
+}
+.catalog_mid{
+    grid-column: 2/2;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 100%;
+}
+.catalog_input{
+    margin-bottom: 8%;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 20px;
+    border: 0;
+    border-bottom: 1px solid;
+    box-sizing: border-box;
+}
+.catalog-post{
+    background-color: #CB06060D;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+.form_label{
+    margin-left: 5%;
+    font-family: 'Inter', sans-serif;
+    color: rgba(0,0,0, 0.6);
+}
+.catalog-header{
+    font-family: 'Inter', sans-serif;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 22px;
+}
+.catalog-button{
+    height: 60px;
+    width: 90%;
+    margin-left: 5%;
+}
+.catalog_icon{
+    max-width: 37px;
+    max-height: 37px;
+    margin: 5px;
+}
+.catalog_button-text{
+    font-family: 'Inter', sans-serif;
+}
+.catalog-text{
+    margin-left: 5%;
+    margin-top: 2%;
+    font-size: 12px;
+    color: rgba(0,0,0, 0.4);
+}
+.bot{
+    font-family: 'Inter', sans-serif;
+
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1.33fr;
+}
+.contacts{
+    grid-column: 1/1;
+}
+.contacts h2{
+    font-size: 20px;
+}
+.contacts-info{
+
+}
+.contacts-mail{
+
+}
+.img_logo-Kazani{
+    display: block;
+    margin-top: 30%;
+    max-width: 150px;
+}
+.img_logo-Kazani-mob{
+    display: none;
+}
+.map-desktop{
+    display: block;
+    grid-column: 2/3;
+}
+.map_tablet{
+    display: none;
+    grid-column: 2/3;
+}
+.map{
+    display: none;
+}
+@media (max-width: 1500px){
+    .catalog_mid{
+        max-height: 87%;
+    }
+}
+@media (max-width: 1300px){
+    .catalog_mid{
+        max-height: 80%;
+    }
+    .img_logo-Konference{
+        max-width: 120px;
+    }
+    .top_text{
+        font-size: 20px;
+    }
+    .mid{
+        grid-gap: 30px;
+        margin-top: 50px;
+    }
+    .text_mid{
+        font-size: 16px;
+    }
+    .img_logo-artgreen{
+        max-width: 80px;
+        max-height: 100px;
+    }
+    .text_mid h1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .catalog_mid{
+        max-height: 100%;
+    }
+    .catalog-header{
+        font-size: 18px;
+    }
+    .bot{
+        margin-top: 50px;
+    }
+    .contacts h2{
+        font-size: 18px;
+    }
+    .contacts-info{
+        font-size: 14px;
+    }
+    .contacts-mail{
+        font-size: 14px;
+    }
+    .img_logo-Kazani{
+        margin-top: 50%;
+        max-width: 120px;
+    }
+    .map-desktop{
+        display: none;
+        grid-column: 2/3;
+    }
+    .map_tablet{
+        display: block;
+        grid-column: 2/3;
+    }
+
+}
+@media (max-width: 1200px) {
+    .catalog_mid{
+        max-height: 95%;
+    }
+}
+@media (max-width: 1170px) {
+    .catalog_mid{
+        max-height: 85%;
+    }
+}
+@media (max-width: 1140px) {
+    .catalog_mid{
+        max-height: 83%;
+    }
+}
+@media (max-width: 1000px) {
+    .container{
+        padding: 50px 0 50px 0;
+    }
+    .top{
+        padding: 0 20px 0 20px;
+    }
+    .top_text{
+        font-size: 16px;
+    }
+    .mid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+    .text_mid{
+        padding: 0 20px 0 20px;
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    .text_mid h1{
+        font-size: 30px;
+    }
+    .catalog_mid{
+        grid-column: 1/1;
+        grid-row: 2/3;
+    }
+    .bot{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+    .contacts{
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    .map_tablet{
+        display: none;
+        grid-column: 1/1;
+        grid-row: 2/2;
+    }
+    .img_logo-Kazani{
+        display: none;
+    }
+    .img_logo-Kazani-mob{
+        display: block;
+        display: flex;
+        max-width: 120px;
+        place-self: center;
+        grid-row: 3/4;
+    }
+    .map{
+        display: block;
+    }
+}
+@media (max-width: 800px){
+
+}
